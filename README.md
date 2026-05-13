@@ -116,3 +116,22 @@ of summary data.
   - ![MacOS](https://img.shields.io/badge/mac%20os-000000?style=for-the-badge&logo=apple&logoColor=white)
   - ![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)
   - ![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)
+
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://github.com/Kumar-laxmi/Heart-Disease-Prediction-System
+```
+
+Go to the project directory
+
+```bash
+  cd Intelligent-Heart-Disease-Prediction-System
+```
+
+Start the server
+
+```bash
+  python manage.py runserver
