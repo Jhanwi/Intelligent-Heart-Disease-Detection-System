@@ -122,7 +122,7 @@ of summary data.
 Clone the project
 
 ```bash
-  git clone https://github.com/Kumar-laxmi/Heart-Disease-Prediction-System
+  git clone https://github.com/Jhanwi/Intelligent-Heart-Disease-Detection-System.git
 ```
 
 Go to the project directory
