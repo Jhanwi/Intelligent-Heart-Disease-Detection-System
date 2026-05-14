@@ -1,5 +1,6 @@
 # Intelligent-Heart-Disease-Detection-System
 ---
+<img src="Screenshots/Heart-Disease-Prediction-System-banner.png" />
 
 ## Abstract 
 <p> 
