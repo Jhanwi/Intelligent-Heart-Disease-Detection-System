@@ -155,3 +155,26 @@ def prdict_heart_disease(list_data):
     dataframe = str(df.head())
     return (nn_model.score(X_test, y_test) * 100),(pred)
 ```
+## Output Screen-shots
+When the application is runned then, a Welcome Page pops-up
+<img src="Screenshots/WelcomePage.png" />
+
+Admin Dash-board:
+<img src="Screenshots/AdminDashboard.png" />
+
+Entering Heart Details to check our Health:
+<img src="Screenshots/AddHeartDetail.png" />
+
+Since these details are stored in the Data-base, so we can also retrieve past results:
+<img src="Screenshots/SearchLogs1.png" />
+
+To view our own details:
+<img src="Screenshots/ViewMyDetaile.png" />
+
+If a user doesn't understand how to use the application then he can:
+<img src="Screenshots/IntroductionViewVideo.png" />
+
+To view registered Doctor information:
+<img src="Screenshots/DoctorRecords.png" />
+
+## NOTE: GitHub Pages is not working
