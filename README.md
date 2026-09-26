@@ -1,180 +1,425 @@
 
 <img src="Screenshots/Heart-Disease-Prediction-System-banner.png" />
 
-## Abstract 
-<p> 
-  Now days, Heart disease is the most common disease. But, unfortunately the treatment of heart
-disease is somewhat costly that is not affordable by common man. Hence, we can reduce this
-problem in some amount just by predicting heart disease before it becomes dangerous
-using Heart Disease Prediction System Using Machine Learning and Data mining. If we can
-find out heart disease problem in early stages then it becomes very helpful for
-treatment. Machine Learning and Data Mining techniques are used for the construction
-of Heart Disease Prediction System. In healthcare biomedical field, there is large use of heath
-care data in the form of text, images, etc but, that data is hardly visited and is not mined. So,
-we can avoid this problem by introducing Heart Disease Prediction System. This system will
-help us reduce the costs and to enhance the quality treatment of heart patients. This system can
-able to identify complex problems and can able to take intelligent medical decisions. The
-system can predict likelihood of patients of getting heart problems by their profiles such as
-blood pressure, age, sex, cholesterol and blood sugar. Also, the performance will be compared
-by calculation of confusion matrix. This can help to calculate accuracy, precision, and recall.
-The overall system provides high performance and better accuracy. 
-</p>
+# ❤️ Intelligent Heart Disease Detection System
 
----
+### Healthcare Prediction Application using Machine Learning
 
-## Introduction
+> A Django-based healthcare application that uses **13 clinical parameters** to predict the likelihood of heart disease. The system combines machine learning with patient, doctor, and administrative workflows to make prediction results and healthcare information easier to manage.
+
 <p>
-  The health care industries collect huge amounts of data that contain some hidden information,
-which is useful for making effective decisions. For providing appropriate results and making
-effective decisions on data, some advanced data mining techniques are used. In this study, a
-Heart Disease Prediction System (HDPS) is developed using Naives Bayes and Decision Tree
-algorithms for predicting the risk level of heart disease. The system uses 13 medical parameters
-such as age, sex, blood pressure, cholesterol, and obesity for prediction. The HDPS predicts
-the likelihood of patients getting heart disease. It enables significant knowledge. E.g.
-Relationships between medical factors related to heart disease and patterns, to be established.
-We have employed the multilayer perceptron neural network with back propagation as the
-training algorithm. The obtained results have illustrated that the designed diagnostic system
-can effectively predict the risk level of heart diseases.
+  <a href="https://github.com/Jhanwi/Intelligent-Heart-Disease-Detection-System">💻 GitHub</a>
 </p>
 
 ---
 
-## Aim
-<p> 
-  To predict heart disease according to input parameter values provided by user and dataset
-stored in database.
-</p>
+## 💡 What Problem Does It Solve?
+
+Heart disease risk can be difficult to assess from multiple clinical parameters manually.
+
+This project provides a simple application where users can enter relevant health information and receive a machine-learning-based prediction.
+
+The application also brings related healthcare workflows into one place:
+
+| 👤 Patient            | 👨‍⚕️ Doctor               | 🛠️ Admin               |
+| --------------------- | -------------------------- | ----------------------- |
+| Register & log in     | Log in securely            | Manage doctors          |
+| Enter health details  | View patient details       | Manage patients         |
+| Get prediction        | Access patient information | Manage datasets         |
+| Search doctors        | —                          | View feedback           |
+| View previous records | —                          | Monitor system activity |
+| Submit feedback       | —                          | —                       |
 
 ---
 
-## Objective
-<p>
-  The main objective of this project is to develop a heart disease prediction system. The system
-can discover and extract hidden knowledge associated with diseases from a historical heart data
-set Heart disease prediction system aims to exploit data mining techniques on medical data set
-to assist in the prediction of the heart diseases.
-</p>
+## ✨ Key Features
+
+### 👤 Patient Portal
+
+Patients can:
+
+* Register and log in
+* View personal details
+* Enter 13 clinical parameters
+* Get heart-disease risk predictions
+* View previous prediction records
+* Search for doctors by name, address, or type
+* Submit feedback
+
+### 👨‍⚕️ Doctor Portal
+
+Doctors can:
+
+* Log in to the system
+* View patient information
+* Access relevant patient records
+
+### 🛠️ Admin Portal
+
+Administrators can:
+
+* Manage doctor records
+* View patient information
+* Upload/manage the prediction dataset
+* View disease information
+* Review user feedback
+* Monitor system activity
 
 ---
 
-## Project Scope
-<p>
-  The project has a wide scope, as it is not intended to a particular organization. This project is
-going to develop generic software, which can be applied by any businesses organization.
-Moreover it provides facility to its users. Also the software is going to provide a huge amount
-of summary data.
-</p>
+## 🧠 Prediction Workflow
+
+The prediction process follows a simple workflow:
+
+```text
+Patient Login
+     ↓
+Enter Clinical Parameters
+     ↓
+Validate & Process Input
+     ↓
+Load Dataset
+     ↓
+Train Machine Learning Model
+     ↓
+Generate Prediction
+     ↓
+Display Result
+```
+
+### Clinical Parameters
+
+The model uses **13 parameters**:
+
+```text
+Age
+Sex
+Chest Pain Type
+Resting Blood Pressure
+Cholesterol
+Fasting Blood Sugar
+Resting ECG
+Maximum Heart Rate
+Exercise-Induced Angina
+ST Depression
+Slope
+Number of Major Vessels
+Thalassemia
+```
+
+These values are processed and passed to the trained machine-learning model to generate the prediction.
+
+> **Note:** The prediction is a machine-learning output for the project and should not be treated as a medical diagnosis.
 
 ---
-## System Analysis
-### Modules:
-- **Patient Login:-** *Patient Login to the system using his ID and Password.*
-- **Patient Registration:_** *If Patient is a new user he will enter his personal details and he
-     will user Id and password through which he can login to the system.*
-- **My Details:-** *Patient can view his personal details.*
-- **Disease Prediction:-** *- Patient will specify the input parameter values. System will take
-      input values and predict the disease based on the input data values specified by the
-      patient and system will also suggest doctors based on the locality*
-- **Search Doctor:-** *Patient can search for doctor by specifying name, address or type.*
-- **Feedback:-** *Patient will give feedback this will be reported to the admin*
-- **Doctor Login:-** *Doctor will access the system using his User ID and Password.*
-- **Patient Details:-** *Doctor can view patient’s personal details.*
-- **Notification:-** *Admin and doctor will get notification how many people had accessed
-      the system and what all are the diseases predicted by the system.*
-- **Admin Login:-** *Admin can login to the system using his ID and Password.*
-- **Add Doctor:-** *Admin can add new doctor details into the database.*
-- **Add Dataset:-** *Admin can add dataset file in database.*
-- **View Doctor:-** *Admin can view various Doctors along with their personal details.*
-- **View Disease:-** *Admin can view various diseases details stored in database.*
-- **View Patient:-** *Admin can view various patient details that had accessed the system.*
-- **View Feedback:-** *Admin can view feedback provided by various users.*
-  
-### Technology Used:
-- #### Languages:
-  - ![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-  - ![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-  - ![JAVASCRIPT](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
-  - ![PYTHON](https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=darkgreen)
-- #### FrameWork:
-  - ![BOOTSTRAP](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
-  - ![DJANGO](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=green)
-- #### Machine-Learning Algorithms:
-  - <a href="https://en.wikipedia.org/wiki/Gradient_boosting">**GRADIENT BOOSTING ALGORITHM**</a>
-  - <a href="https://en.wikipedia.org/wiki/Logistic_regression">**LOGISTIC REGRESSION**</a>
-- #### ML/DL:
-  - ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
-  - ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
-  - ![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
-- Database:
-  - ![SQLite](https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white)
-- #### Data-Set for training:
-  - <a href="Machine_Learning/heart.csv">Click here for DATA-SET</a>
-- #### IDE:
-  - ![VS Code](https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)
-  - ![pyCharm](https://img.shields.io/badge/PyCharm-000000.svg?&style=for-the-badge&logo=PyCharm&logoColor=white)
-- #### OS used for testing:
-  - ![MacOS](https://img.shields.io/badge/mac%20os-000000?style=for-the-badge&logo=apple&logoColor=white)
-  - ![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)
-  - ![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)
 
-## Run Locally
+## 🤖 Machine Learning
 
-Clone the project
+The application uses **Pandas and Scikit-learn** to process the dataset and train the prediction model.
+
+### Training Process
+
+```text
+Dataset
+   ↓
+Load with Pandas
+   ↓
+Select 13 Clinical Parameters
+   ↓
+Train/Test Split (80/20)
+   ↓
+Gradient Boosting
+   ↓
+Model Prediction
+   ↓
+Evaluate on Test Data
+```
+
+### Models Used
+
+* **Gradient Boosting Classifier**
+* **Logistic Regression**
+
+The current prediction workflow uses the **Gradient Boosting Classifier** with:
+
+* 100 estimators
+* Learning rate: 1.0
+* Maximum depth: 1
+* Random state: 0
+
+The dataset is divided using an **80/20 train-test split**.
+
+---
+
+## 📊 Data Processing
+
+The project uses **Pandas and NumPy** for working with clinical data.
+
+The dataset is loaded from the application's database and converted into a Pandas DataFrame before training.
+
+The workflow includes:
+
+* Dataset loading
+* Feature selection
+* Data preparation
+* Train/test splitting
+* Model training
+* Prediction
+* Model evaluation
+
+---
+
+## 🏥 Healthcare Workflow
+
+The application connects prediction functionality with basic healthcare management:
+
+```text
+Patient
+   │
+   ├── Health Details
+   │       ↓
+   │   Prediction
+   │
+   ├── Previous Records
+   │
+   ├── Doctor Search
+   │
+   └── Feedback
+           ↓
+         Admin
+```
+
+This makes the project more than a standalone ML script by combining the prediction model with a web-based application and user workflows.
+
+---
+
+## 🏗️ How the System Works
+
+The application follows a Django-based structure:
+
+```text
+Web Interface
+      ↓
+Django Application
+      ↓
+Prediction & Business Logic
+      ↓
+Machine Learning Model
+      ↓
+SQLite Database
+```
+
+Each part has a specific responsibility:
+
+* **HTML/CSS/JavaScript** → User interface
+* **Django** → Application logic and request handling
+* **Python** → Prediction and data processing
+* **Scikit-learn** → Machine learning models
+* **Pandas / NumPy** → Data processing
+* **SQLite** → Patient, doctor, feedback, and dataset records
+
+---
+
+## 🗄️ Database
+
+SQLite stores application data such as:
+
+```text
+Users
+ ├── Patients
+ ├── Doctors
+ └── Admin
+
+Healthcare Data
+ ├── Patient Details
+ ├── Prediction Records
+ ├── Doctor Information
+ ├── Dataset
+ └── Feedback
+```
+
+The application retrieves stored data when users need to view previous records or when the prediction workflow requires the training dataset.
+
+---
+
+## 🔐 Application Workflows
+
+The system provides separate workflows for different user roles:
+
+### Patient
+
+```text
+Register
+  ↓
+Login
+  ↓
+Enter Health Details
+  ↓
+Get Prediction
+  ↓
+View Records / Search Doctor
+```
+
+### Doctor
+
+```text
+Login
+  ↓
+Access Patient Information
+```
+
+### Admin
+
+```text
+Login
+  ↓
+Manage Doctors / Patients / Dataset
+  ↓
+Review Feedback & System Activity
+```
+
+---
+
+## 🛠️ Tech Stack
+
+**Frontend**
+
+`HTML` `CSS` `JavaScript` `Bootstrap`
+
+**Backend**
+
+`Python` `Django`
+
+**Machine Learning**
+
+`Scikit-learn` `Pandas` `NumPy`
+
+**Models**
+
+`Gradient Boosting` `Logistic Regression`
+
+**Database**
+
+`SQLite`
+
+**Development**
+
+`VS Code` `PyCharm` `Git` `GitHub`
+
+---
+
+## 📁 Project Structure
+
+```text
+Intelligent-Heart-Disease-Detection-System/
+├── Machine_Learning/
+├── Screenshots/
+├── manage.py
+├── db.sqlite3
+├── requirements.txt
+└── README.md
+```
+
+---
+
+## 🚀 Run Locally
+
+### 1. Clone the project
 
 ```bash
-  git clone https://github.com/Jhanwi/Intelligent-Heart-Disease-Detection-System.git
+git clone https://github.com/Jhanwi/Intelligent-Heart-Disease-Detection-System.git
 ```
 
-Go to the project directory
+### 2. Go to the project directory
 
 ```bash
-  cd Intelligent-Heart-Disease-Prediction-System
+cd Intelligent-Heart-Disease-Detection-System
 ```
 
-Start the server
+### 3. Install dependencies
 
 ```bash
-  python manage.py runserver
+pip install -r requirements.txt
 ```
 
-## Model Training(Machine Learning)
+### 4. Start the Django server
 
-```javascript
-def prdict_heart_disease(list_data):
-    csv_file = Admin_Helath_CSV.objects.get(id=1)
-    df = pd.read_csv(csv_file.csv_file)
-
-    X = df[['age','sex','cp','trestbps','chol','fbs','restecg','thalach','exang','oldpeak','slope','ca','thal']]
-    y = df['target']
-    X_train, X_test, y_train, y_test = train_test_split(X, y, train_size=0.8, random_state=0)
-    nn_model = GradientBoostingClassifier(n_estimators=100,learning_rate=1.0,max_depth=1, random_state=0)
-    nn_model.fit(X_train, y_train)
-    pred = nn_model.predict([list_data])
-    print("Neural Network Accuracy: {:.2f}%".format(nn_model.score(X_test, y_test) * 100))
-    print("Prdicted Value is : ", format(pred))
-    dataframe = str(df.head())
-    return (nn_model.score(X_test, y_test) * 100),(pred)
+```bash
+python manage.py runserver
 ```
-## Output Screen-shots
-When the application is runned then, a Welcome Page pops-up
+
+Open the local application at:
+
+```text
+http://127.0.0.1:8000/
+```
+
+---
+
+## 🖥️ Application Screenshots
+
+### Welcome Page
+
 <img src="" />
 
-Admin Dash-board:
+### Admin Dashboard
+
 <img src="Screenshots/AdminDashboard.png" />
 
-Entering Heart Details to check our Health:
-<img src="" />
+### Health Details & Prediction
 
-Since these details are stored in the Data-base, so we can also retrieve past results:
+<img src="Screenshots/AddHeartDetail.png" />
+
+### Previous Prediction Records
+
 <img src="Screenshots/SearchLogs1.png" />
 
-To view our own details:
+### Patient Details
+
 <img src="Screenshots/ViewMyDetaile.png" />
 
-If a user doesn't understand how to use the application then he can:
-<img src="Screenshots/IntroductionViewVideo.png" />
+### Doctor Records
 
-To view registered Doctor information:
 <img src="Screenshots/DoctorRecords.png" />
 
-## NOTE: GitHub Pages is not working
+### Application Introduction
+
+<img src="Screenshots/IntroductionViewVideo.png" />
+
+---
+
+## 🎯 What This Project Demonstrates
+
+* Healthcare application development
+* Machine learning integration with a web application
+* Django application workflows
+* Patient and doctor management
+* Clinical data processing with Pandas
+* Scikit-learn model training and prediction
+* SQLite database integration
+* User authentication and role-based workflows
+* Dataset management
+* Troubleshooting across application and data workflows
+
+---
+
+## 🔮 Future Improvements
+
+* [ ] DICOM/image-based medical data support
+* [ ] Model versioning and improved evaluation
+* [ ] REST API for prediction services
+* [ ] Better input validation and error handling
+* [ ] Production deployment
+* [ ] Automated model retraining
+* [ ] More detailed prediction reports
+* [ ] Improved monitoring and logging
+
+---
+
+## 👩‍💻 Author
+
+**Jhanwi Kumari**
+
+B.Tech — Computer Science & Engineering
+
+[GitHub Repository](https://github.com/Jhanwi/Intelligent-Heart-Disease-Detection-System)
