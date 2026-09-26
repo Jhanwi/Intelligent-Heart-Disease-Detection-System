@@ -375,7 +375,9 @@ http://127.0.0.1:8000/
 
 <img src="Screenshots/DoctorRecords.png" />
 
+### View Feedback
 
+<img src="Screenshots/ViewFeedBack.png" />
 
 ---
 
