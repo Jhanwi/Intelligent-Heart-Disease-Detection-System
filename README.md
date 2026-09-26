@@ -1,6 +1,3 @@
-
-<img src="Screenshots/Heart-Disease-Prediction-System-banner.png" />
-
 # ❤️ Intelligent Heart Disease Detection System
 
 ### Healthcare Prediction Application using Machine Learning
@@ -360,7 +357,7 @@ http://127.0.0.1:8000/
 
 ### Welcome Page
 
-<img src="" />
+<img src="Screenshots/WelcomePage(1).png" />
 
 ### Admin Dashboard
 
