@@ -367,6 +367,9 @@ http://127.0.0.1:8000/
 
 <img src="Screenshots/AddHeartDetail.png" />
 
+### Patient Records
+
+<img src="Screenshots/PatientRecords (1).png" />
 
 ### Doctor Records
 
