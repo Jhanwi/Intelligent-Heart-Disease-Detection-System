@@ -157,13 +157,13 @@ def prdict_heart_disease(list_data):
 ```
 ## Output Screen-shots
 When the application is runned then, a Welcome Page pops-up
-<img src="Screenshots/WelcomePage.png" />
+<img src="" />
 
 Admin Dash-board:
 <img src="Screenshots/AdminDashboard.png" />
 
 Entering Heart Details to check our Health:
-<img src="Screenshots/AddHeartDetail.png" />
+<img src="" />
 
 Since these details are stored in the Data-base, so we can also retrieve past results:
 <img src="Screenshots/SearchLogs1.png" />
