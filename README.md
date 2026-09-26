@@ -357,7 +357,7 @@ http://127.0.0.1:8000/
 
 ### Welcome Page
 
-<img src="Screenshots/WelcomePage(1).png" />
+<img src="Screenshots/WelcomePage (1).png" />
 
 ### Admin Dashboard
 
@@ -367,21 +367,12 @@ http://127.0.0.1:8000/
 
 <img src="Screenshots/AddHeartDetail.png" />
 
-### Previous Prediction Records
-
-<img src="Screenshots/SearchLogs1.png" />
-
-### Patient Details
-
-<img src="Screenshots/ViewMyDetaile.png" />
 
 ### Doctor Records
 
 <img src="Screenshots/DoctorRecords.png" />
 
-### Application Introduction
 
-<img src="Screenshots/IntroductionViewVideo.png" />
 
 ---
 
